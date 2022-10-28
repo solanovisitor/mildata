@@ -19,17 +19,21 @@ class CreateEngine:
         self.password = password
         self.connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER='+self.server+';DATABASE='+self.database+';UID='+self.username+';PWD='+ self.password
         self.connection_url = URL.create("mssql+pyodbc", query={"odbc_connect": self.connection_string})
-        self.engine = create_engine(connection_url)
+        self.engine = create_engine(self.connection_url)
+
+    # A function to pull data from our SQL Server
+    def pull_data(self):
+        self.df = pd.read_sql(self.query, self.engine)
+        return self.df
 
 # An inherited class from Pull to filter data from our clients SQL Server
 class Beneficiarios(CreateEngine):
-    self.query = "SELECT * FROM dw.Beneficiarios"
     # Initialize the class
-    def __init__(self, server, database, username, password):
+    def __init__(self, server, database, username, password, regional, celular, email):
         super().__init__(server, database, username, password)
-
-    # Filter data from the SQL Server
-    def get_benefs(self):
-        self.benef = pd.read_sql_query('''SELECT * FROM [blkch].[aux_blkch_beneficiarios]''', self.engine)
-        return self.benef
+        self.query = "SELECT * FROM dw.Beneficiarios"
+        self.regional = regional
+        self.celular = celular
+        self.email = email
+        self.benef = CreateEngine.pull_data(self.query)
 
