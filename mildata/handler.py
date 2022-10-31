@@ -1,13 +1,7 @@
 # A collection of functions to interact with our SQL Server
-
 from sqlalchemy.engine import URL
 from sqlalchemy import create_engine
 import pandas as pd
-import numpy as np
-import os
-import sys
-import datetime
-import time
 
 # A class to pull data from our clients SQL Server
 class Engine:
@@ -27,12 +21,16 @@ class Engine:
 # A class to pull data from our clients SQL Server
 class Beneficiarios:
     # Initialize the class
-    def __init__(self, connection, regional, email, celular):
+    def __init__(self, connection, regional, email, celular, n):
         self.connection = connection
         self.regional = regional
         self.email = email
         self.celular = celular
-        self.query = "SELECT * FROM dbo.Beneficiarios WHERE Regional = '" + self.regional + "' AND Email = '" + self.email + "' AND Celular = '" + self.celular + "'"
-        # Pulling data from query
+        self.n = n
+        self.query = "SELECT * FROM [dw].[DBeneficiarios]"#  WHERE Regional = '" + self.regional + "' AND Email = '" + self.email + "' AND Celular = '" + self.celular + "' LIMIT '" + self.n
+
+    # Pulling data from query
+    def pull(self):
         self.df = pd.read_sql(self.query, self.connection)
+        return self.df
 
