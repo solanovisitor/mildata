@@ -1,0 +1,39 @@
+[2022-10-28T17:56:27.039Z] Log level: Info
+[2022-10-28T17:56:27.045Z] [info] Validating found git in: git
+[2022-10-28T17:56:27.074Z] [info] Using git 2.20.1 from git
+[2022-10-28T17:56:27.122Z] > git rev-parse --show-toplevel [34ms]
+[2022-10-28T17:56:27.122Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:27.137Z] > git rev-parse --show-toplevel [4ms]
+[2022-10-28T17:56:27.137Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:27.144Z] > git rev-parse --show-toplevel [2ms]
+[2022-10-28T17:56:27.144Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:27.150Z] > git rev-parse --show-toplevel [1ms]
+[2022-10-28T17:56:27.150Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:27.169Z] > git rev-parse --show-toplevel [14ms]
+[2022-10-28T17:56:27.169Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:27.176Z] > git rev-parse --show-toplevel [2ms]
+[2022-10-28T17:56:27.176Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:27.181Z] > git rev-parse --show-toplevel [1ms]
+[2022-10-28T17:56:27.218Z] > git rev-parse --git-dir --git-common-dir [32ms]
+[2022-10-28T17:56:27.227Z] [info] Open repository: /home/dsazureuser/airbyte
+[2022-10-28T17:56:27.247Z] > git rev-parse --show-toplevel [5ms]
+[2022-10-28T17:56:27.247Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:27.279Z] > git rev-parse --show-toplevel [16ms]
+[2022-10-28T17:56:27.279Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:27.763Z] > git check-ignore -v -z --stdin [9ms]
+[2022-10-28T17:56:27.814Z] > git status -z -uall [578ms]
+[2022-10-28T17:56:27.821Z] > git symbolic-ref --short HEAD [2ms]
+[2022-10-28T17:56:27.827Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+[2022-10-28T17:56:27.839Z] > git remote --verbose [3ms]
+[2022-10-28T17:56:27.849Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [17ms]
+[2022-10-28T17:56:27.893Z] > git config --get commit.template [19ms]
+[2022-10-28T17:56:27.902Z] > git rev-parse --show-toplevel [10ms]
+[2022-10-28T17:56:27.902Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:27.945Z] > git rev-parse --show-toplevel [4ms]
+[2022-10-28T17:56:27.945Z] fatal: not a git repository (or any of the parent directories): .git
+[2022-10-28T17:56:28.469Z] > git status -z -uall [568ms]
+[2022-10-28T17:56:28.476Z] > git symbolic-ref --short HEAD [1ms]
+[2022-10-28T17:56:28.484Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+[2022-10-28T17:56:28.495Z] > git remote --verbose [2ms]
+[2022-10-28T17:56:28.505Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [17ms]
+[2022-10-28T17:56:28.519Z] > git config --get commit.template [1ms]

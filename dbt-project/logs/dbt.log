@@ -1,0 +1,58 @@
+
+
+============================== 2022-10-27 13:50:11.325270 | 306c7dfd-7424-49a5-8a55-57fe570576a9 ==============================
+[0m13:50:11.325282 [info ] [MainThread]: Running with dbt=1.3.0
+[0m13:50:11.325650 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/dsazureuser/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m13:50:11.325838 [debug] [MainThread]: Tracking: tracking
+[0m13:50:11.326785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d5490f0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d5490ff28>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d5490f2e8>]}
+[0m13:50:11.327134 [info ] [MainThread]: Creating dbt configuration folder at /home/dsazureuser/.dbt
+[0m13:50:26.390130 [debug] [MainThread]: Starter project path: /home/dsazureuser/dbt-project/.env/lib/python3.7/site-packages/dbt/include/starter_project
+[0m13:50:32.720570 [info ] [MainThread]: No sample profile found for sqlserver.
+[0m13:50:32.720912 [info ] [MainThread]: 
+Your new dbt project "DataLake" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:50:32.721307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d5490fda0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d5490f0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7d5490f400>]}
+[0m13:50:32.721649 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-27 13:50:55.459445 | 2ffee151-c029-47cc-bc17-14d1d0be6c7c ==============================
+[0m13:50:55.459456 [info ] [MainThread]: Running with dbt=1.3.0
+[0m13:50:55.459826 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/dsazureuser/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'DataLake', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m13:50:55.460012 [debug] [MainThread]: Tracking: tracking
+[0m13:50:55.460764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3acd598048>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3acd598f28>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3acd5982e8>]}
+[0m13:50:55.461741 [info ] [MainThread]: A project called DataLake already exists here.
+[0m13:50:55.462105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3acd598be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3acd598438>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3acd598048>]}
+[0m13:50:55.462394 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-27 13:51:45.780018 | c985f6c0-8a7d-42e3-b854-93baf7ab7d21 ==============================
+[0m13:51:45.780029 [info ] [MainThread]: Running with dbt=1.3.0
+[0m13:51:45.780839 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/dsazureuser/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'DataLake/', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m13:51:45.781088 [debug] [MainThread]: Tracking: tracking
+[0m13:51:45.781768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2ca4fa0b8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2ca4faeb8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2ca4fa2b0>]}
+[0m13:51:55.296782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2ca4faba8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2ca4fad68>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb2ca4fa208>]}
+[0m13:51:55.297423 [debug] [MainThread]: Flushing usage events
+[0m13:51:55.822582 [info ] [MainThread]: ctrl-c
+
+
+============================== 2022-10-27 13:52:00.645982 | 59fb02d8-2ac6-4b9b-a39e-3d6cffe09e1d ==============================
+[0m13:52:00.645996 [info ] [MainThread]: Running with dbt=1.3.0
+[0m13:52:00.646841 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/dsazureuser/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'DataLake', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m13:52:00.647097 [debug] [MainThread]: Tracking: tracking
+[0m13:52:00.647784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c78fef048>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c78fefe10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c78fef0f0>]}
+[0m13:52:00.648889 [info ] [MainThread]: A project called DataLake already exists here.
+[0m13:52:00.649438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c78fefdd8>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c78fef240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9c78fef048>]}
+[0m13:52:00.649715 [debug] [MainThread]: Flushing usage events
